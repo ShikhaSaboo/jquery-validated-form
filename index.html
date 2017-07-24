@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/roboto/Roboto-Regular.woff">
+	<link rel="stylesheet" type="text/css" href="css/icon.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+<body>
+<div class="content-wrapper">
+	<div class="content-header"></div>
+	<div class="container clrfix">
+		<div class="form-wrapper z-depth-1">
+			<div class="form-border"></div>
+			<div class="row ">
+	    		<div class="form-space col s12">
+	    			<h2>Large Outlet SBD Visibility</h2>
+	    			<p>This forms allows RMAP Auditor to enter the Visibility of SBD SKUs</p>
+	    			<!-- Addded id to the form.. 
+	    				 Added name attribute to all the  input except for the checkbox..
+	    			 	 Also same name is added as a class to all corresponding input..  -->
+					<form name="generalForm" class="space-top" id="outletForm" validate>
+						<div class="required section input-field ">
+							<!--error sapn added -->
+							<h5>Outlet name<span class="error">This field is required</span></h5> 
+							<input type="text" id="autocomplete" class=" outletName autocomplete" name="outletName">
+							
+						</div>
+						<div class="required">
+							<!--error sapn added -->
+							<h5>Outlet Id<span class="error">This field is required</span></h5>
+							<input name ="outletId" type="number" class="outletId" required />
+							
+						</div>
+						<div class="space-top brand-list">
+							<h5>Brands</h5>
+							<ul class="collapsible" data-collapsible="accordion">
+							    <li>
+									<div class="collapsible-header">
+										<h6>Pantene</h6>
+									</div>
+									<div class="collapsible-body">
+										<ul>
+										  	<li>
+										  		<div class="row grid-header-bar no-margin">
+											      	<div class="col s8 no-margin">
+														<h6>SKU</h6>
+													</div>
+													<div class="col s4 no-margin required">
+														<h6>Enter Quantity</h6>	
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row grid-body no-margin">
+												<ul class="skuList clrfix">
+													<li class="clrfix">
+														<div class="col s8 no-margin">
+															<input type="checkbox" id="panteneSku1" class="skuCheck"/>
+															<label for="panteneSku1">Pantene Shampoo-750ml</label>
+															
+														</div>
+														<div class="col s4 no-margin qtyInpParnt">
+															<input type="number" class=" skuPantene1 qtyInp" name="skuPantene1"disabled/>
+															<!--error sapn added -->
+															<span class="error">This field is required</span>
+														</div>
+													</li>
+													<li class="clrfix">
+														<div class="col s8 no-margin">
+															<input type="checkbox" id="panteneSku2" class="skuCheck" />
+															<label for="panteneSku2">Pantene Shampoo-750ml</label>
+														</div>
+														<div class="col s4 no-margin qtyInpParnt">
+															<input type="number" class="skuPantene2 qtyInp" name="skuPantene2"disabled/>
+															<!--error sapn added -->
+															<span class="error">This field is required</span>
+														</div>
+													</li>
+												</div>
+											</li>
+										</ul>
+									</div>
+							    </li>
+							    <li>
+									<div class="collapsible-header">
+										<h6>Ariel</h6>
+									</div>
+									<div class="collapsible-body">
+										<ul>
+										  	<li>
+										  		<div class="row grid-header-bar no-margin">
+											      	<div class="col s8 no-margin">
+														<h6>SKU</h6>
+													</div>
+													<div class="col s4 no-margin required">
+														<h6>Enter Quantity</h6>	
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row grid-body no-margin">
+													<ul class="skuList clrfix">
+														<li class="clrfix">
+															<div class="col s8 no-margin">
+																<input type="checkbox" id="arielSku1" class="skuCheck"/>
+																<label for="arielSku1">Ariel 200gm</label>
+															</div>
+															<div class="col s4 no-margin qtyInpParnt">
+															<input type="number" class=" skuAriel1 qtyInp"
+															name="skuAriel1" disabled/>
+															<!--error sapn added -->
+															<span class="error">This field is required</span>
+														</div>
+														</li>
+														<li class="clrfix">
+															<div class="col s8 no-margin">
+																<input type="checkbox" id="arielSku2" class="skuCheck" />
+																<label for="arielSku2">Ariel 500gm</label>
+															</div>
+															<div class="col s4 no-margin qtyInpParnt">
+															<input type="number" class="skuAriel2 qtyInp" name="skuAriel2" disabled/>
+															<!--error sapn added -->
+															<span class="error">This field is required</span>
+														</div>
+														</li>
+														<li class="clrfix">
+															<div class="col s8 no-margin">
+																<input type="checkbox" id="arielSku3" class="skuCheck"/>
+																<label for="arielSku3">Ariel Oxyblu 500gm</label>
+															</div>
+															<div class="col s4 no-margin qtyInpParnt">
+															<input type="number" class="skuAriel3 qtyInp" name="skuAriel3" disabled/>
+															<!--error sapn added -->
+															<span class="error">This field is required</span>
+														</div>
+														</li>
+														<li class="clrfix">
+															<div class="col s8 no-margin">
+																<input type="checkbox" id="arielSku4" class="skuCheck"/>
+																<label for="arielSku4">Ariel Oxyblu 200gm</label>
+															</div>
+															<div class="col s4 no-margin qtyInpParnt">
+															<input type="number" class="skuAriel4 qtyInp" name="skuAriel4" disabled/>
+															<!--error sapn added -->
+															<span class="error">This field is required</span>
+														</div>
+														</li>
+														<li class="clrfix">
+															<div class="col s8 no-margin">
+																<input type="checkbox" id="arielSku5" class="skuCheck"/>
+																<label for="arielSku5">Ariel matic 1kg</label>
+															</div>
+															<div class="col s4 no-margin qtyInpParnt">
+															<input type="number" class="skuAriel6 qtyInp" name="skuAriel6" disabled/>
+															<!--error sapn added -->
+															<span class="error">This field is required</span>
+														</div>
+														</li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+							    </li>
+							</ul>
+						</div>
+						<div class="btn-wrapper">
+							<a class="waves-effect waves-light btn" id="submitBtn">Submit</a>
+						</div>
+					</form>
+	    		</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
+<!-- <div class="col s5 no-margin">
+							<input type="checkbox" id="arielSku1" />
+							<label for="arielSku1">Ariel 200gm</label>
+						</div>
+						<div class="col s3 no-margin">
+							<h6>Enter Quantity</h6>	
+						</div>
+						<div class="col s3 no-margin">
+							<input type="text" required />	
+						</div> -->
